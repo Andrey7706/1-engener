@@ -1,0 +1,118 @@
+.order {
+    background: url("../img/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 95px;
+    padding-bottom: 81px;
+}
+.order_title {
+    max-width: 674px;
+    width: 100%;
+    @include Roboto(black);
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $white;
+    margin: 0 auto;
+}
+.order_desc {
+    max-width: 647px;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.312;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $white;
+    margin: 13px auto 42px;
+}
+.order_form {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.order_form form input::placeholder {
+    color: $white;
+    opacity: 1;
+}
+.order_form form input::-webkit-input-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.order_form form input::-moz-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.order_form form input:-moz-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.order_form form input:-ms-input-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.personal {
+    width: 100%;
+    padding-left: 26px;
+    font-size: 11px;
+    line-height: 1.167;
+    color: #A2A2A2;
+    margin-top: 26px;
+    box-sizing: border-box;
+}
+.personal span {
+    position: relative;
+}
+.personal span:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/check.svg");
+    position: absolute;
+    top: 0;
+    left: -26px;
+}
+.personal a {
+    text-decoration: underline;
+    color: inherit;
+}
+.personal a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .order {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .order_title {
+        font-size: 45px;
+    }
+}
+@media (max-width: 768px) {
+    .order {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .order_title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .order {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .order_title {
+        font-size: 25px;
+    }
+    .order_desc {
+        margin: 13px auto 20px;
+    }
+}

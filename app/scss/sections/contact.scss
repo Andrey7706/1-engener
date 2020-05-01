@@ -1,0 +1,80 @@
+.contact_container {
+    border-top: 1px solid #E5E5E5;
+    padding-top: 44px;
+    padding-bottom: 71px;
+}
+.contact_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 36px;
+}
+.contact_item {
+    max-width: 195px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact_icon {
+    min-height: 44px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.contact_content {
+    text-align: center;
+}
+.contact_title {
+    @include Roboto(medium);
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-top: 13px;
+    text-align: center;
+}
+.contact_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: -0.03em;
+    margin-top: 9px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+.contact {
+
+    .socials {
+        margin-top: 21px;
+
+        a {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+.contact_item-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (max-width: 992px) {
+    .contact_container {
+        border-top: 1px solid #E5E5E5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .contact_list {
+        margin-top: 15px;
+    }
+    .contact_container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

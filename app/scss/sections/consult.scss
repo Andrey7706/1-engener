@@ -1,0 +1,95 @@
+.consult {
+    box-sizing: border-box;
+    background: url("../img/bg-4.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 83px;
+}
+.consult_title {
+    max-width: 708px;
+    width: 100%;
+    @include Roboto(black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: $white;
+    margin-bottom: 13px;
+
+    span {
+        color: $red;
+    }
+}
+.consult_desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.312;
+    letter-spacing: -0.03em;
+    color: $white;
+    margin-bottom: 35px;
+}
+.consult_form {
+    max-width: 280px;
+    width: 100%;
+}
+.consult_form form input::placeholder {
+    color: $white;
+    opacity: 1;
+}
+.consult_form form input::-webkit-input-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.consult_form form input::-moz-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.consult_form form input:-moz-placeholder {
+    color: $white;
+    opacity: 1;
+}
+.consult_form form input:-ms-input-placeholder {
+    color: $white;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .consult {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .consult_title {
+        font-size: 45px;
+    }
+}
+@media (max-width: 768px) {
+    .consult {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .consult_title {
+        font-size: 35px;
+        text-align: center;
+    }
+    .consult_desc {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .consult_form {
+        margin: 0 auto;
+    }
+    .consult {
+        background: url("../img/bg-4-1.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 480px) {
+    .consult_title {
+        font-size: 25px;
+    }
+}

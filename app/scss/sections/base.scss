@@ -1,0 +1,136 @@
+.base {
+    box-sizing: border-box;
+    padding-top: 76px;
+    padding-bottom: 121px;
+    background: url("../img/bg-3.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.base_container {
+    max-width: 1230px;
+    width: 100%;
+}
+.base_description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #6B6B6B;
+    margin-top: 7px;
+}
+.base_list {
+    display: block;
+    margin: 73px 0 0 0;
+
+    .slick-track {
+        margin-left: 0;
+    }
+}
+.base_item {
+    width: 270px;
+    background: $white;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+.base_img {
+    width: 100%;
+    min-height: 208px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+}
+.base_content {
+    padding: 21px 20px 20px 28px;
+    box-sizing: border-box;
+}
+.base_title {
+    @include Roboto(medium);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.167;
+    letter-spacing: -0.03em;
+    margin-bottom: 9px;
+}
+.base_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    color: #6B6B6B;
+}
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+}
+.slick-prev {
+    left: -40px;
+    z-index: 10;
+}
+.slick-next {
+    right: -40px;
+    z-index: 20;
+}
+.slick-prev:before, .slick-next:before {
+    content: '';
+    background-size: contain;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background: $white;
+    opacity: 0.5;
+    box-sizing: border-box;
+    border: 2px solid $blue;
+    background-position: 50%;
+}
+.slick-prev:before {
+    background-image: url('../img/arrow-prew.svg');
+}
+.slick-next:before {
+    background-image: url('../img/arrow-next.svg');
+}
+.base {
+
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-next {
+        right: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .base {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .base_list {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .base {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .base_list {
+        margin-top: 20px;
+    }
+    .base {
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+}
